@@ -1,0 +1,17 @@
+<p-tabMenu [model]="items" [activeItem]="items[0]">
+    <!-- <ng-template pTemplate="item" let-item let-i="index">
+
+    </ng-template> -->
+
+  <span [ngSwitch]="nome">
+  <p *ngSwitchCase="'Home'">
+  home ativado
+  </p>
+  <p *ngSwitchCase="'Calendar'">
+  
+  </p>
+  <p *ngSwitchDefault>
+  
+  </p>
+  </span>>
+</p-tabMenu>

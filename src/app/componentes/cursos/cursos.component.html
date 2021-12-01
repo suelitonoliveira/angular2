@@ -1,0 +1,14 @@
+<p>
+    Lista de cursos do portal {{ nomePortal }}
+</p>
+
+<ul>
+    <li *ngFor="let curso of cursos">
+    {{curso.name}}
+    </li>
+</ul>
+
+
+<p-dropdown [options]="cursos" [(ngModel)]="selectedCursos" optionLabel="name"></p-dropdown>
+
+<p-dropdown [options]="books" [(ngModel)]="selectedBook" optionLabel="name"></p-dropdown>
